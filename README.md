@@ -1,8 +1,15 @@
-# React + Vite
+# Labb 2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Company
 
-Currently, two official plugins are available:
+Skapar en sida för ett företag
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Sidan ska innehålla minst 8 komponenter
+
+Formateras med Prettier
+
+Hämta data från extern API med t.ex. fetch
+
+Styla komponenter med css-in-js
+
+Använd useReduder, useContext useMemo och useCallback
