@@ -7,6 +7,24 @@ import News from '../pages/News'
 import Contact from '../pages/Contact'
 import NotFound from '../pages/NotFound'
 import Services from '../pages/Services'
+import styled from 'styled-components'
+import HPCharacters from '../pages/HPCaracters'
+
+const StyledUl = styled.ul`
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1em;
+    margin-bottom: 0;
+    margin-top: 0;
+    list-style: none;
+    background-color: #ea661e;
+`
+const StyledLi = styled.li`
+    disply: block;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    font-weight: bold;
+    font-size: 1.25em;
+`
 
 function TopNavigation() {
     let topNavItem = []
@@ -20,23 +38,24 @@ function TopNavigation() {
     return (
         <>
             <nav>
-                <ul className="nav bg-dark">
+                <StyledUl>
                     {topNavItem.map((items) => (
-                        <li key={items.id} className="nav-item">
+                        <StyledLi key={items.id}>
                             <NavLink
                                 style={({ isActive }) => {
                                     {
-                                        return isActive ? { color: '#000' } : {}
+                                        return isActive
+                                            ? { color: 'white' }
+                                            : { color: '#000' }
                                     }
                                 }}
                                 to={items.route}
-                                className="nav-link"
                             >
                                 {items.namn}
                             </NavLink>
-                        </li>
+                        </StyledLi>
                     ))}
-                </ul>
+                </StyledUl>
             </nav>
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -44,6 +63,7 @@ function TopNavigation() {
                 <Route path="/news" element={<News />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services" element={<Services />} />
+                <Route path="/characters" element={<HPCharacters />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </>

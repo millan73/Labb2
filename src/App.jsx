@@ -7,12 +7,9 @@ function App() {
     return (
         <>
             <div>
-                <div>
-                    <Header companyName={'Företaget'} />
-                </div>
-
+                <Header companyName={'Företaget'} />
                 <TopNavigation />
-                <Footer className="footer" />
+                <Footer />
             </div>
         </>
     )

@@ -1,14 +1,17 @@
-const Articles = () => {
+import Container from '../components/Container'
+import Context, { NumberContext } from '../components/Context'
+
+export default function Articles() {
     return (
         <>
-            <section>
-                <div className="row">
-                    <div className="col-9">
+            <NumberContext.Provider value={43}>
+                <Container>
+                    <>
                         <h2>Artiklar</h2>
-                    </div>
-                </div>
-            </section>
+                        <Context />
+                    </>
+                </Container>
+            </NumberContext.Provider>
         </>
     )
 }
-export default Articles

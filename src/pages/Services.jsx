@@ -1,14 +1,11 @@
-const Services = () => {
+import Container from '../components/Container'
+
+export default function Services() {
     return (
         <>
-            <section>
-                <div className="row">
-                    <div className="col-9">
-                        <h2>Tjänster</h2>
-                    </div>
-                </div>
-            </section>
+            <Container>
+                <h2>Tjänster</h2>
+            </Container>
         </>
     )
 }
-export default Services

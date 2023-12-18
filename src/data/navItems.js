@@ -26,6 +26,12 @@ export const navItems = [
     {
         id: 4,
         typ: 'top',
+        namn: 'HP',
+        route: '/characters'
+    },
+    {
+        id: 5,
+        typ: 'top',
         namn: 'Kontakt',
         route: '/contact'
     }

@@ -1,14 +1,13 @@
-const Contacts = () => {
+import Container from '../components/Container'
+import ContactFormula from '../components/ContactFormula'
+
+export default function Contacts() {
     return (
         <>
-            <section>
-                <div className="row">
-                    <div className="col-9">
-                        <h2>Kontakt</h2>
-                    </div>
-                </div>
-            </section>
+            <Container>
+                <h2>Kontakta oss</h2>
+                <ContactFormula />
+            </Container>
         </>
     )
 }
-export default Contacts

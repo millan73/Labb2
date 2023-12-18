@@ -1,13 +1,25 @@
+import Container from '../components/Container'
+
 const Home = () => {
     return (
         <>
-            <section>
-                <div className="row">
-                    <div className="col-9">
-                        <h2>Hem</h2>
+            <Container />
+            <Container primary>
+                <div>
+                    <div>
+                        <h2>Tjänster</h2>
                     </div>
+                    <p>Detta är en del text</p>
                 </div>
-            </section>
+            </Container>
+            <Container>
+                <div>
+                    <div>
+                        <h2>Nyheter</h2>
+                    </div>
+                    <p>Detta är en del text</p>
+                </div>
+            </Container>
         </>
     )
 }

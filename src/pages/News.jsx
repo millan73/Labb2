@@ -1,14 +1,11 @@
-const News = () => {
+import Container from '../components/Container'
+
+export default function News() {
     return (
         <>
-            <section>
-                <div className="row">
-                    <div className="col-9">
-                        <h2>Nyheter</h2>
-                    </div>
-                </div>
-            </section>
+            <Container>
+                <h2>Nyheter</h2>
+            </Container>
         </>
     )
 }
-export default News

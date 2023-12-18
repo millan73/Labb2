@@ -1,23 +1,19 @@
-import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-function Footer({ className }) {
+const StyledFooter = styled.footer`
+    background-color: #ea661e;
+    min-height: 300px;
+    padding: 1em;
+`
+
+function Footer() {
     return (
         <>
-            <div className={className}>
-                <footer>
-                    <h2>Information om företaget</h2>
-                </footer>
-            </div>
+            <StyledFooter>
+                <h2>Information om företaget</h2>
+            </StyledFooter>
         </>
     )
-}
-
-Footer.defaultProps = {
-    className: 'row'
-}
-
-Footer.propTypes = {
-    className: PropTypes.string
 }
 
 export default Footer
