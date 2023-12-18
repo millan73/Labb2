@@ -1,11 +1,14 @@
 import Container from '../components/Container'
+import Headline, { HeaderContext } from '../components/Headline'
 
 export default function News() {
     return (
         <>
-            <Container>
-                <h2>Nyheter</h2>
-            </Container>
+            <HeaderContext.Provider value={'Nyheter'}>
+                <Container>
+                    <Headline />
+                </Container>
+            </HeaderContext.Provider>
         </>
     )
 }

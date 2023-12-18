@@ -1,13 +1,16 @@
 import Container from '../components/Container'
 import ContactFormula from '../components/ContactFormula'
+import Headline, { HeaderContext } from '../components/Headline'
 
 export default function Contacts() {
     return (
-        <Container>
-            <>
-                <h2>Kontakta oss</h2>
-                <ContactFormula />
-            </>
-        </Container>
+        <HeaderContext.Provider value={'Kontakta oss'}>
+            <Container>
+                <>
+                    <Headline />
+                    <ContactFormula />
+                </>
+            </Container>
+        </HeaderContext.Provider>
     )
 }

@@ -5,13 +5,11 @@ import Footer from './components/Footer'
 
 function App() {
     return (
-        <>
-            <div>
-                <Header companyName={'Företaget'} />
-                <TopNavigation />
-                <Footer />
-            </div>
-        </>
+        <div>
+            <Header companyName={'Företaget'} />
+            <TopNavigation />
+            <Footer />
+        </div>
     )
 }
 

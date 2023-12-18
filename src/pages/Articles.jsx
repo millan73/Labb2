@@ -1,17 +1,17 @@
 import Container from '../components/Container'
-import Context, { NumberContext } from '../components/Context'
+import Headline, { HeaderContext } from '../components/Headline'
 
 export default function Articles() {
     return (
         <>
-            <NumberContext.Provider value={43}>
+            <HeaderContext.Provider value={'Artiklar'}>
                 <Container>
                     <>
-                        <h2>Artiklar</h2>
-                        <Context />
+                        <Headline />
+                        <p>Detta är lite text</p>
                     </>
                 </Container>
-            </NumberContext.Provider>
+            </HeaderContext.Provider>
         </>
     )
 }
