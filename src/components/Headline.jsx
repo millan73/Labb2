@@ -1,5 +1,5 @@
 import { useContext, createContext } from 'react'
-/**  useMemo och useCallback     */
+/**  useMemo      */
 
 export const HeaderContext = createContext()
 

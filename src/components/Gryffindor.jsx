@@ -5,9 +5,12 @@ import axios from 'axios'
 function List({ state }) {
     const urval = []
 
-    state.hpcharacters.map((character) => {
-        if (character.house === 'Gryffindor') urval.push(character)
-    })
+    function makeUrval(urval) {
+        state.hpcharacters.map((character) => {
+            if (character.house === 'Gryffindor') urval.push(character)
+        })
+        return urval
+    }
 
     return (
         <>
@@ -17,7 +20,7 @@ function List({ state }) {
                 vil gära publicera de karaktärer som tillhör Gryffindor för er
             </p>
             <>
-                {urval.map((character) => (
+                {makeUrval(urval).map((character) => (
                     <div key={character.id}>
                         <h4>
                             {character.name} - {character.actor}
